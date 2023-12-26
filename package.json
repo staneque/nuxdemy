@@ -6,7 +6,7 @@
 		"seed": "node prisma/seed.mjs"
 	},
 	"scripts": {
-		"build": "nuxt build",
+		"build": "npx prisma generate && nuxt build",
 		"dev": "nuxt dev",
 		"generate": "nuxt generate",
 		"preview": "nuxt preview",
@@ -23,12 +23,12 @@
 		"@vueuse/nuxt": "^10.2.1",
 		"nuxt": "^3.7.4",
 		"pinia": "^2.1.6",
-		"prisma": "5.1.0",
+		"prisma": "5.7.0",
 		"sass": "^1.63.6",
 		"vite-plugin-vsharp": "^1.4.2"
 	},
 	"dependencies": {
-		"@prisma/client": "5.1.0",
+		"@prisma/client": "5.7.0",
 		"stripe": "^13.9.0"
 	}
 }
