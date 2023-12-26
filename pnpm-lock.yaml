@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@prisma/client':
+    specifier: 5.1.0
+    version: 5.1.0(prisma@5.1.0)
   stripe:
     specifier: ^13.9.0
     version: 13.9.0
@@ -22,9 +25,6 @@ devDependencies:
   '@pinia/nuxt':
     specifier: ^0.4.11
     version: 0.4.11(vue@3.3.4)
-  '@prisma/client':
-    specifier: 5.1.0
-    version: 5.1.0(prisma@5.1.0)
   '@tailwindcss/typography':
     specifier: ^0.5.9
     version: 0.5.10(tailwindcss@3.3.3)
@@ -1538,16 +1538,15 @@ packages:
     dependencies:
       '@prisma/engines-version': 5.1.0-28.a9b7003df90aa623086e4d6f4e43c72468e6339b
       prisma: 5.1.0
-    dev: true
+    dev: false
 
   /@prisma/engines-version@5.1.0-28.a9b7003df90aa623086e4d6f4e43c72468e6339b:
     resolution: {integrity: sha512-jTwE2oy1yjICmTfnCR0ASIpuMZXZ18sUzQXB7V0RMbrM9OlcmbUwXPuYhnxXuWN8XwRmujeIhsXs/Zeh+fjPOQ==}
-    dev: true
+    dev: false
 
   /@prisma/engines@5.1.0:
     resolution: {integrity: sha512-HqaFsnPmZOdMWkPq6tT2eTVTQyaAXEDdKszcZ4yc7DGMBIYRP6j/zAJTtZUG9SsMV8FaucdL5vRyxY/p5Ni28g==}
     requiresBuild: true
-    dev: true
 
   /@rollup/plugin-alias@5.0.1(rollup@3.29.4):
     resolution: {integrity: sha512-JObvbWdOHoMy9W7SU0lvGhDtWq9PllP5mjpAy+TUslZG/WzOId9u80Hsqq1vCUn9pFJ0cxpdcnAv+QzU2zFH3Q==}
@@ -6487,7 +6486,6 @@ packages:
     requiresBuild: true
     dependencies:
       '@prisma/engines': 5.1.0
-    dev: true
 
   /proc-log@3.0.0:
     resolution: {integrity: sha512-++Vn7NS4Xf9NacaU9Xq3URUuqZETPsf8L4j5/ckhaRYsfPeRyzGw+iDjFhV/Jr3uNmTvvddEJFWh5R1gRgUH8A==}
