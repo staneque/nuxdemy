@@ -8,7 +8,7 @@
 
 <script setup lang="ts">
 const firstLesson = await useFirstLesson()
-await navigateTo(firstLesson.path)
+// await navigateTo(firstLesson.path)
 </script>
 
 <style lang="scss" scoped></style>

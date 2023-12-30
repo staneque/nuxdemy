@@ -89,12 +89,6 @@ const firstLesson = await useFirstLesson()
 // Get chapter competion percentages
 const { percentageCompleted } = storeToRefs(useCourseProgress())
 
-watchEffect(() => {
-  console.log('course', toRaw(course.value))
-  console.log('firstLesson', toRaw(firstLesson))
-  console.log('progeress', percentageCompleted)
-})
-
 const resetError = async error => {
   await navigateTo(firstLesson.path)
 

@@ -3,6 +3,7 @@ import { H3Event } from 'h3'
 // If the user does not exist on the request, throw a 401 error
 export default async (event: H3Event) => {
   if (!event.context.user) {
+    console.log('POTRACHENO')
     throw createError({
       statusCode: 401,
       message: 'Unauthorized',
@@ -16,6 +17,7 @@ export default async (event: H3Event) => {
       cookie: getHeader(event, 'cookie'),
     },
   })
+
   if (!hasAccess) {
     throw createError({
       statusCode: 401,

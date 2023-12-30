@@ -7,7 +7,7 @@ const prisma = new PrismaClient()
 
 export default defineEventHandler(async event => {
   // Throw a 401 if there is no user logged in
-  protectRoute(event)
+  await protectRoute(event)
 
   // Get user email from the supabase user
   const {
