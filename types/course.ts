@@ -1,13 +1,13 @@
-import { Lesson } from "@prisma/client"
+import type { Lesson } from '@prisma/client'
 
 export type LessonWithPath = Lesson & {
-	path: string
+  path: string
 }
 
 export type ChapterProgress = {
-	[key: string]: boolean
+  [key: string]: boolean
 }
 
 export type CourseProgress = {
-	[key: string]: ChapterProgress
+  [key: string]: ChapterProgress
 }

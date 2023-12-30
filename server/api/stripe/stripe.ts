@@ -1,6 +1,6 @@
-import stripe from "stripe"
+import Stripe from 'stripe'
 
 const config = useRuntimeConfig()
-const Stripe = stripe(config.stripeSecret)
+const stripe = new Stripe(config.stripeSecret, { apiVersion: '2023-08-16' })
 
-export default Stripe
+export default stripe

@@ -7,7 +7,7 @@
 	},
 	"scripts": {
 		"build": "npx prisma generate && nuxt build",
-		"dev": "nuxt dev",
+		"dev": "NODE_TLS_REJECT_UNAUTHORIZED=0 nuxt dev --https --ssl-cert localhost.pem --ssl-key localhost-key.pem",
 		"generate": "nuxt generate",
 		"preview": "nuxt preview",
 		"postinstall": "nuxt prepare"
@@ -29,6 +29,6 @@
 	},
 	"dependencies": {
 		"@prisma/client": "5.7.0",
-		"stripe": "^13.9.0"
+		"stripe": "^13.11.0"
 	}
 }
